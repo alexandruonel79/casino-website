@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.for-overflow{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 8vh;
+    background-color: #5D4954;
+}
+.logo{
+    text-transform: uppercase;
+    color: rgb(226,226,226);
+    letter-spacing: 5px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+ .logo h4{
+        font-size: 70px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li a{
+        opacity: 1;
+        font-size: 350%;
+    }
+    .nav-links .desktop-only{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .burger .line1{
+        height: 10px;
+        width: 54px;
+    }
+    .burger .line2{
+        height: 10px;
+        width: 54px;
+    }
+    .burger .line3{
+        height: 10px;
+        width: 54px;
+    }
+     /*responsive pt barbut */
+    .coinflip{
+        display: block;
+        position: absolute;
+        top:500px;
+        bottom: auto;
+        height: 92vh;
+        /**/
+        height: 35%;
+        background-color:rgb(189, 216, 115);
+        z-index: -1;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .coinflip{
+        width: 100%;
+      text-align: center;
+      margin-top: 5%;
+    }
+    .coinflip .imagini img{
+        display: inline-block;
+        margin-top: 7%;
+        width: 80%;
+        height: 200px;  
+    }
+    .coinflip .capsaupajura1{
+        margin-top: 1%;
+        padding: 20px;
+        width: 10%;
+        border-style: solid;
+        border-color: rgba(47, 199, 72,0.7);
+        background-color: rgba(47, 199, 72,0.7);
+    }
+    .coinflip .capsaupajura2{
+        margin-top: 1%;
+        padding: 20px;
+        width: 10%;
+        border-style: solid;
+        border-color: rgba(47, 199, 72,0.7);
+        background-color: rgba(47, 199, 72,0.7);
+    }
+    .coinflip .capsaupajura3{
+        margin-top: 1%;
+        padding: 10px;
+        width: 10%;
+        border-style: solid;
+        border-color: rgb(226, 226, 226);
+        background-color: rgba(47, 199, 72,0.6);
+    }
+    body{
+        background-image: url('https://images-na.ssl-images-amazon.com/images/I/71CNq%2BO4C9L._AC_SL1001_.jpg') !important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: -2;
+        
+    }
+    /* aici se termina pt barbut */
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.coinflip{
+    width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+.coinflip .imagini img{
+    display: inline-block;
+    margin-top: 7%;  
+}
+.coinflip .imagini .img1{
+width: 20%;
+}
+.coinflip .imagini .img2{
+    width: 20%;
+}
+.coinflip .capsaupajura1{
+    margin-top: 1%;
+    padding: 20px;
+    width: 10%;
+    border-style: solid;
+    border-color: rgba(47, 199, 72,0.7);
+    background-color: rgba(47, 199, 72,0.7);
+}
+.coinflip .capsaupajura2{
+    margin-top: 1%;
+    padding: 20px;
+    width: 10%;
+    border-style: solid;
+    border-color: rgba(47, 199, 72,0.7);
+    background-color: rgba(47, 199, 72,0.7);
+}
+.coinflip .capsaupajura3{
+    margin-top: 1%;
+    padding: 10px;
+    width: 10%;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    background-color: rgba(47, 199, 72,0.6);
+}
+.selected{
+    color: red;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1552749412-091909ed9f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
